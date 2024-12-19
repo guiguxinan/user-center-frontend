@@ -1,12 +1,13 @@
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { message, Tabs } from 'antd';
+import {Divider, message, Space, Tabs} from 'antd';
 import React, { useState } from 'react';
 import { history } from 'umi';
 import { PLANET_LINK, SYSTEM_LOGO } from '@/constants';
 import Footer from '@/components/Footer';
 import { register } from '@/services/ant-design-pro/api';
 import styles from './index.less';
-import { LoginForm, ProFormText } from '@ant-design/pro-form';
+import {LoginForm, ProFormText} from '@ant-design/pro-form';
+import {Link} from "@umijs/preset-dumi/lib/theme";
 
 const Register: React.FC = () => {
   const [type, setType] = useState<string>('account');
@@ -52,7 +53,7 @@ const Register: React.FC = () => {
             },
           }}
           logo={<img alt="logo" src={SYSTEM_LOGO} />}
-          title="编程导航知识星球"
+          title="个人学习星球"
           subTitle={
             <a href={PLANET_LINK} target="_blank" rel="noreferrer">
               最好的编程学习知识圈子
@@ -66,7 +67,7 @@ const Register: React.FC = () => {
           }}
         >
           <Tabs activeKey={type} onChange={setType}>
-            <Tabs.TabPane key="account" tab={'账号密码注册'} />
+            <Tabs.TabPane key="account" tab={'用户注册'} />
           </Tabs>
           {type === 'account' && (
             <>
@@ -138,6 +139,9 @@ const Register: React.FC = () => {
               />
             </>
           )}
+          <Space style={{marginBottom: '20px' }}  split={<Divider type="vertical" />}>
+            <Link to="/user/login">已有账号/返回登录</Link>
+          </Space>
         </LoginForm>
       </div>
       <Footer />

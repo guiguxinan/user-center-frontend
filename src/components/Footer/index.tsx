@@ -3,7 +3,7 @@ import { DefaultFooter } from '@ant-design/pro-layout';
 import { PLANET_LINK } from '@/constants';
 
 const Footer: React.FC = () => {
-  const defaultMessage = '鱼皮出品';
+  const defaultMessage = '鬼谷西南出品';
   const currentYear = new Date().getFullYear();
   return (
     <DefaultFooter
@@ -17,18 +17,18 @@ const Footer: React.FC = () => {
         },
         {
           key: 'codeNav',
-          title: '编程导航',
-          href: 'https://www.code-nav.cn',
+          title: '渝ICP备2024046991号',
+          href: 'https://beian.miit.gov.cn/',
           blankTarget: true,
         },
         {
           key: 'github',
           title: (
             <>
-              <GithubOutlined /> 鱼皮 GitHub
+              <GithubOutlined /> ggxn GitHub
             </>
           ),
-          href: 'https://github.com/liyupi',
+          href: 'https://github.com/guiguxinan',
           blankTarget: true,
         },
       ]}

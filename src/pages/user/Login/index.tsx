@@ -70,7 +70,7 @@ const Login: React.FC = () => {
       <div className={styles.content}>
         <LoginForm
           logo={<img alt="logo" src={SYSTEM_LOGO} />}
-          title="编程导航知识星球"
+          title="个人学习星球"
           subTitle={
             <a href={PLANET_LINK} target="_blank" rel="noreferrer">
               最好的编程学习知识圈子
@@ -84,7 +84,7 @@ const Login: React.FC = () => {
           }}
         >
           <Tabs activeKey={type} onChange={setType}>
-            <Tabs.TabPane key="account" tab={'账号密码登录'} />
+            <Tabs.TabPane key="account" tab={'用户登录'} />
           </Tabs>
           {status === 'error' && loginType === 'account' && (
             <LoginMessage content={'错误的账号和密码'} />

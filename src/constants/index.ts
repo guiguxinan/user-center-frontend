@@ -1,6 +1,7 @@
-export const SYSTEM_LOGO =
-  'https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/img/logo.png';
-
+/**
+ * 网站logo
+ */
+export const SYSTEM_LOGO ='https://avatars.githubusercontent.com/u/74590504?u=f88a9bd567f12ca48b57580b36d385143bdca051&v=4&size=64'
 /**
  * 知识星球文档地址
  */

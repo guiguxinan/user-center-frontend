@@ -1,6 +1,6 @@
 {
-  "name": "鱼皮用户中心",
-  "short_name": "鱼皮用户中心",
+  "name": "个人学习星球",
+  "short_name": "个人学习星球",
   "display": "standalone",
   "start_url": "./?utm_source=homescreen",
   "theme_color": "#002140",
